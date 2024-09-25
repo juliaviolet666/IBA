@@ -13,11 +13,11 @@ on:
 jobs:
   terraform:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./aws/backend
     defaults:
-      run:
-      working-directory: ${{ env.working-directory }}
+      
+     run:
+      shell: bash
+      working-directory: aws/backend
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
