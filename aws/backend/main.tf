@@ -5,7 +5,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "bucket-petrova1"
+    bucket         = "bucket-petrova"
     key            = "dev/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "DynamoDB"
